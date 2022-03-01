@@ -37,7 +37,7 @@ for func in functionBlacklist:			# for each blacklisted function
 # JUST A BASIC "FIND AND REPLACE" FOR BANNED KEYWORDS
 for i,line in enumerate(lines):			# loop through lines
 	for key in keywordsToRedact:		# replace each keyword
-		line=line.replace(key,"[REDACTED]")
+		line=line.replace(key,"REDACTED")
 	lines[i]=line
 
 with open(fileOut,'w') as f:
